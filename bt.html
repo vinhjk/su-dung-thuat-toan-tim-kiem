@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function validate(str) {
+    var regexp = /[09]\d{8}$/;
+    var result = regexp.test(str);
+    if (result){
+        console.log("Viettel")
+    }else {
+        console.log("Vinaphone");
+    }
+}
+var num1 = "0989999899";
+var num2 = "0839952468";
+var num3 = "0978686868";
+validate(num1);
+validate(num2);
+validate(num3);
+</script>
+</body>
+</html>
